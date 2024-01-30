@@ -1,0 +1,93 @@
+<!--// Create a button with the text 'Click' inside. 
+
+// Create 2 buttons 1 with your name and 1 with your favorite food. 
+
+// Create a paragraph with the text "Hello, World!" inside. 
+
+// Continuing from 3rd qos, create a paragraph below the prevois paragraph and write something you did today. 
+
+// Create 2 buttons 'Add to cart' and Buy now". Use CSS to give them yellow and orange background colors. 
+
+// Change the title of tab to "Buttons"
+
+// Add a script element in HTML so that when the page loads, it displays the message: "Welcome" in the console and as a popup(). 
+
+/* Using HTML and CSS create this template: 
+
+Adults Plain Cotton T-Shirt
+Price: $7.99
+
+Add to Cart (button) | Buy Now (button)
+
+9. also in qos (8) add the onclick="..." attribute to the two buttons: 
+9.1) When clicking "Add to cart" create a popup with the text "Added".
+9.2) When clicking "Buy now", display the message "Loading" in the Console, and then create a popup with the text "Purchased". 
+*/
+-->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--Question 6-->
+    <title>Buttons</title>
+    <link rel="stylesheet" href="challenge4.css">
+</head>
+<body>
+    <!--Question 1-->
+    <button>Click</button><br><br>
+    
+    <!--Question 2-->
+    <button>My name</button><br><br>
+    <button>Idli</button><br><br>
+
+    <!--Question 3-->
+    <p>
+        "Hello, World! I am here learning various HTML tags and formats"
+    </p>
+   
+    <!--Question 4-->
+    <p>
+        Today, I cooked my favorite curry and bhindi fry. I spoke with my parents. Then worked on my javascript challenges.
+    </p>
+
+    <!--Question 5-->
+    <button type="button" class="add" >Add to Cart</button>
+    <button type="button" class="buynow">Buy now</button>
+
+    <!--Question 6 is in <head><title> section-->
+    <!--Question 8-->
+    <p>
+        Adults Plain Cotton T-Shirt
+        <br>
+        Price: $7.99
+    </p>
+
+    <!--Question 9
+    <button onclick="add">Add to Cart</button>
+    <button onclick="buy">Buy Now</button>-->
+    <button onclick="alert('Added')">Add to Cart</button>
+    <button onclick="alert('Loading'); alert('Purchased')">Buy now</button>
+
+    <!-- <button id="buy-now">Buy now</button> -->
+
+
+    <!--Question 7-->
+    <script>
+        console.log("Welcome");
+        alert("Welcome");
+
+    //Question 9 continues
+
+const buyNow=document.querySelector("#buy-now");
+buyNow.addEventListener("click", ()=>{
+    console.log("Loading");
+    alert("Purchased");
+});
+
+    </script>
+</body>
+</html>
