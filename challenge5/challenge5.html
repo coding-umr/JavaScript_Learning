@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <button onclick="alert(`Quantity: ${Quantity}`)">Show Quantity</button>
+    <button onclick="Quantity+=2">+2</button>
+    <button onclick="Quantity+=3">+3</button>
+    <button onclick="Quantity+=4">+4</button>
+    <button onclick="Quantity+=5">+5</button>
+    <button onclick="Quantity-=2">-2</button>
+    <button onclick="Quantity-=3">-3</button>
+    <button onclick="Quantity=0; alert(`The new Quantity: ${Quantity}`);">Reset</button>
+
+    <script> 
+        // 5.a) 
+        let name=prompt("Take the input name from the user")
+        alert(typeof name)
+
+        // 5.b) 
+        console.log(`My name is: ${name}`)
+
+        // 5.c) 
+        coffee=5
+        bagel=3
+        soup=9
+        cost=coffee+(2*bagel)+soup
+        cost/=100
+
+        // 5.d) 
+        alert(`The total cost of your item is: $${cost}`)
+
+        // 5.e) 
+        tax=cost*0.1
+
+        // 5.f) 
+        alert(`The total tax needed to pay on your items: $${tax}`);
+
+        // 5.g) 
+        Total_cost=cost+tax;
+        alert(`The bill amount (after including tax) = $${Total_cost}`);
+
+        Quantity=0;
+
+        
+    </script>
+</body>
+</html>

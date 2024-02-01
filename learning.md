@@ -41,4 +41,13 @@
 >> HTML = skeleton for website.
 >> CSS = facial appearance of the site. 
 >> console.log() 
->>>
+
+> Variables: 
+>> What is a varaible? 
+>>> Variable is type a storage that stores some value. 
+>>> In .js we define the variable by using: let, var (and if you want to define an contant you need to use: const) 
+>>> variable restrinctions: 
+>>>> 1. Can't use special words (e.g. > let) 
+>>>> 2. Can;t start with the number. 
+>>>> 3. Can't use special characters except ($,_)
+>>> As .js accepts both stmt, written with/without semicolon: it's advisable to add semicolon after each line. 
