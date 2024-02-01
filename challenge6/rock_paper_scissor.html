@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Rock_Paper Game</title>
+</head>
+<body>
+    <!-- So, we would be having (1) buttons: Rock, Paper, Scissors || When the value of the buttons become equal to the desired value coming from the computor, we can say you won else you lose! -->
+
+    <button onclick="
+  let guess = prompt('Choose any one: Rock/Paper/Scissor?: ').toLowerCase();
+
+  let intList = [0, 1, 2];
+  let listLength = intList.length;
+  let randomIndex = Math.floor(Math.random() * listLength);
+  let computer = intList[randomIndex];
+  console.log(computer);
+  let computerChoice = computer === 0 ? 'Scissor' : computer === 1 ? 'Rock' : 'Paper';
+
+  let outcome = guess === computerChoice ? 'You tied!' :
+                 (guess === 'rock' && computerChoice === 'scissor' ||
+                  guess === 'paper' && computerChoice === 'rock' ||
+                  guess === 'scissor' && computerChoice === 'paper') ? 'You won!' :
+                 'You lose!';
+
+  alert(outcome);
+">Rock/Paper/Scissor</button>
+
+
+
+</body>
+</html>

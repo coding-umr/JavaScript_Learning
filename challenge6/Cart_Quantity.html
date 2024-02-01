@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <button onclick="
+    if(Quantity>10)
+    {alert('The Cart if full')}
+    if (Quantity<0)
+    {alert('Not enough items in the cart')}
+    else
+    {alert(`Quantity: ${Quantity}`)}
+    ">Show Quantity</button>
+
+    <button onclick="Quantity+=2">+2</button>
+    <button onclick="Quantity+=3">+3</button>
+    <button onclick="Quantity+=4">+4</button>
+    <button onclick="Quantity+=5">+5</button>
+    <button onclick="Quantity-=2">-2</button>
+    <button onclick="Quantity-=3">-3</button>
+    <button onclick="Quantity=0; alert(`The new Quantity: ${Quantity}`);">Reset</button>
+
+    <script> 
+        
+        let Quantity=0;
+        
+    </script>
+</body>
+</html>
