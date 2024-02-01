@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <button onclick="alert(`Total items in the cart is ${totalItems}`)">How many items in the cart?</button>
+    <button onclick="totalItems+=4; alert(`Total items in the cart is ${totalItems}`)">+4</button>
+    <button onclick="totalItems+=5; alert(`Total items in the cart is ${totalItems}`)">+5</button>
+    <button onclick="totalItems-=1; alert(`Total items in the cart is ${totalItems}`)">Remove from Cart</button>
+    <button onclick="totalItems-=2; alert(`Total items in the cart is ${totalItems}`)">-2</button>
+    <button onclick="totalItems-=3; alert(`Total items in the cart is ${totalItems}`)">-3</button>
+    
+    <script>
+        let name=prompt("Enter your name");
+        alert(`Your name is ${name}`);
+        console.log(`My name is ${name}`);
+
+        totalItems=0;
+
+    </script>
+</body>
+</html>

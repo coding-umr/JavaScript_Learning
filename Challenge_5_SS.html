@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Variables in Javascript</title>
+</head>
+<body>
+    <h3>Initial number of items in the cart is 3</h3>
+    <input type="button" id="plus-four" value="+4">
+    <input type="button" id="plus-five" value="+5">
+    <br><br>
+    <input type="button" id="removeFromCart" value="Remove from Cart">
+    <br><br>
+    <input type="button" id="minus-two" value="-2">
+    <input type="button" id="minus-three" value="-3">
+    <br><br>
+    <h3>Final items in the cart</h3>
+    <input type="text" name="No of items in the cart" id="totalitems">
+
+    <!--
+    5.k. Creating a basic calculator that can perform very simple steps: like 
+    1+2=3 (where 1,2,+ are the buttons) 
+    -->
+    <form name="calculator">
+    <h2>Basic Calculator</h2>
+    <input type="button" id="no-one" value="1">
+    <input type="button" id="plus" value="+">
+    <input type="button" id="no-two" value="2">
+    <input type="button" id="equal-to" value="=">
+    <input id="sum"/>
+    </form>
+
+    <!-- 5.a Create a <script> element. Inside the <script>, create a variable called "name", and save your name in this variable (as a string).  -->
+    <script>
+        let name="Sukanya Santhanakrishnan";
+
+    //5.b. Continuing from 5a, display the message "My name is: ${name}" in the console (insert the 'name' variable created in 5a into this message).
+    console.log(`My name is: ${name}`);
+
+    //5.c. At a restraurant, you order 1 coffee ($5), 2 bagals ($3 each), and 1 soup ($9). Calculate the cost and save it in a variable called 'cost'. 
+    let coffee=5;
+    let bagals=3;
+    let soup=9;
+    cost=coffee+(2*bagals)+soup;
+    
+    //5.d.Continuing from 5c, display "cost of food: $${cost}" in the console. 
+    console.log(`Cost of food: $${cost}`);
+
+    //5.e. Let's say the restaurant charges a 10% tax. Using the 'cost' variable from 5c, calculate the tax (hint: multiply by 0.1), and save the result in a variable. 
+    tax=cost*0.1;
+
+    //5.f. Continuing from 5e, display "Tax (10%): $${tax}" in the console. 
+    console.log(`Tax(10%): $${tax}`);
+
+    //5.g. Continuing from 5f, calculate the total (cost+tax), save it in a variable called "totalcost", and display the message "Total cost: $${totalcost}" in the console. 
+    totalcost=cost+tax;
+    console.log(`Total cost: $${totalcost}`);
+
+    //5.h. In the cart quantity project, add 2 more buttons "+4" and "+5", which increases the quantity by 4 and 5 when you click them. Try using +=
+    var plusFour=document.querySelector("#plus-four");
+    var plusFive=document.querySelector("#plus-five");
+    var totalItems=3;
+        plusFour.addEventListener("click", ()=>{
+            totalItems+=4
+            document.getElementById('totalitems').value=totalItems;
+            console.log("Total items in the cart is ", totalItems);
+        });
+
+        plusFive.addEventListener("click", ()=>{
+            totalItems+=5
+            document.getElementById('totalitems').value=totalItems;
+            console.log("Total items in the cart is ", totalItems);
+        });
+        
+
+    //5.i. In the cart quantity project, add a button "remove from cart", which decreases the cart quantity by 1. 
+    var remove=document.querySelector("#removeFromCart");
+    remove.addEventListener("click", ()=>{
+        totalItems-=1;
+        document.getElementById('totalitems').value=totalItems;
+        console.log("Total items in the cart is ", totalItems);
+    })
+
+
+    //5.j. Add 2 buttons '-2' and '-3', which decrease the quantity by 2 and 3. 
+    var minusTwo=document.querySelector("#minus-two");
+    var minusThree=document.querySelector("#minus-three");
+
+    minusTwo.addEventListener("click", ()=> {
+        totalItems-=2;
+        document.getElementById('totalitems').value=totalItems;
+    console.log(`Total items in the cart is ${totalItems}`)
+    })
+
+    minusThree.addEventListener("click", ()=> {
+        totalItems-=3;
+        document.getElementById('totalitems').value=totalItems;
+    console.log(`Total items in the cart is ${totalItems}`)
+    })
+
+
+    /*
+    5.k. Creating a basic calculator that can perform very simple steps: like 
+    1+2=3 (where 1,2,+ are the buttons) 
+    */
+   var one=document.querySelector("#no-one");
+   var add=document.querySelector("#plus");
+   var two=document.querySelector("#no-two");
+   var equalTo=document.querySelector("#equal-to");
+   var totalInCalc;
+
+
+   equalTo.addEventListener("click", ()=>{
+    totalInCalc=parseInt(one.value)+parseInt(two.value);
+    //totalInCalc=one+two; --> it returns object
+    document.getElementById('sum').value=totalInCalc;
+    console.log(totalInCalc);
+   })
+
+
+    </script>
+</body>
+</html>
