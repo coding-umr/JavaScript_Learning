@@ -9,18 +9,14 @@
     <button onclick="num1=parseInt(prompt('Enter the first number'))">Number 1</button>
     <button onclick="operator=prompt('Select any of the operator +, -, *, /')">Operator</button>
     <button onclick="num2=parseInt(prompt('Enter second number'))">Number 2</button>
-    <button onclick="total=alert ('Output is ${total}')
-                    if(operator='+') {alert(`Addition of two numbers is ${num1+num2}`)}
-                    if(operator='-') {alert(`Subtraction of two numbers is ${num1-num2}`)}
-                    if(operator='*') {alert(`Multiplication of two numbers is ${num1*num2}`)}
-                    if(operator='/') {alert(`Division of two numbers is ${num1/num2}`)}">Output</button>
+    <button onclick="if(operator=='+') {alert(`Addition of two numbers is ${num1+num2}`)}
+                    else if(operator=='-') {alert(`Subtraction of two numbers is ${num1-num2}`)}
+                    else if(operator=='*') {alert(`Multiplication of two numbers is ${num1*num2}`)}
+                    else if(operator=='/') {alert(`Division of two numbers is ${num1/num2}`)}">Output</button>
 
     <script>
         var num1, num2, operator, total;
-        if(operator='+')
-        {
-            total=num1+num2;
-        }
+       
     </script>
 </body>
 </html>
