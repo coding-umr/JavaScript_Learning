@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Challenge 7 exercise solutions</title>
+</head>
+<body>
+    <script> 
+    
+    // 7.a. + 7.b. + 7.c.
+    // function greet(name){ 
+    //     if (!name){
+    //         console.log("Hey there!")
+    //     }
+    //     else{
+    //     console.log(`Hello ${name}`)
+    //     }
+    // }
+    // greet(prompt("Enter your name"));
+
+    // 7.d. 
+    function convertToFahrenheit(Celsius){
+        Fahrenheit=(Celsius*9/5)+32
+        return Fahrenheit
+    }
+    convertToFahrenheit(25)
+
+    // 7.e. 
+    function convertToCelsius(fahrenheit){
+        celsius=(fahrenheit-32)*5/9
+        return celsius
+    }
+    convertToCelsius(86)
+
+    // 7.f. 
+    let n=0
+    msg="Enter the unit that you want to convert (c) or (f)"
+    do {
+        n++;
+        person1=prompt(msg);
+
+        if (person1.length>1){
+            msg="You have inserted more than (1) character \nkindly enter either (c) or (f)"
+        }
+    }while(person1.length!=1)
+
+    let person2=prompt("Enter the temperature value: ")
+    convertTemperature(person1,person2)
+
+    function convertTemperature(unit,degree){
+        entered_unit=unit.toLowerCase()
+
+        if (entered_unit=="c"){
+            console.log("Degrees in Fahrenheit",convertToFahrenheit(degree))
+        }
+        else if (entered_unit=="f"){
+            console.log("Degrees in Celsius", convertToCelsius(degree))
+        }
+    }
+    
+
+    
+    
+
+    </script>
+</body>
+</html>
