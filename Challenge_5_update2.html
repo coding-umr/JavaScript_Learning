@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <!--
+    6.e. Create a Cart_Quantity Project. 
+    - Go to exercise 5.k. 
+    - Let's say the cart has a maximum quantity of 10. before updating the quantity, check if the quantity will be greater than 10: 
+    (1): if it is greater display: "the cart if full" else update the quantity in the cart. 
+    - And in case of -2,-3 before updating the quantity in cart, check if it is equals to 0 or not.
+    (1) if it's equal to 0, display "Not enough items in the cart" else just update the cart. 
+    -->
+
+    <button onclick="alert(`Total items in the cart is ${totalItems}`)">How many items in the cart?</button>
+    <input type="button" onclick="checkQuantity1()" value="+4">
+    <input type="button" onclick="checkQuantity2()" value="+5">
+    <input type="button" onclick="removeFromCart()" value="Remove from Cart">
+    <input type="button" onclick="checkQuantity3()" value="-2">
+    <input type="button" onclick="checkQuantity4()" value="-3">
+
+    <script>
+        var totalItems=0;
+        let name=prompt("Enter your name");
+        alert(`Your name is ${name}`);
+        console.log(`My name is ${name}`);
+        console.log(`Total items in the cart is ${totalItems}`);
+        
+        
+        //function for the button "+4"
+        function checkQuantity1(){
+            if(totalItems>10){
+            {alert("Cart is full, unable to add more items");}
+            }
+            else{
+            totalItems+=4;
+            alert(`Total items in the cart is ${totalItems}`);
+            }
+        }
+
+        //function for the button "+5"
+        function checkQuantity2(){
+            if(totalItems>10){
+            {alert("Cart is full, unable to add more items");}
+            }
+            else{
+            totalItems+=5;
+            alert(`Total items in the cart is ${totalItems}`);
+            }
+        }
+
+        
+        //function for the button "-2"
+        function checkQuantity3(){
+            if(totalItems<=0){
+            {alert("Not enough items in the cart");}
+            }
+            else{
+            totalItems-=2;
+            alert(`Total items in the cart is ${totalItems}`);
+            }
+        }
+
+        //function for the button "-3"
+        function checkQuantity4(){
+            if(totalItems<=0){
+            {alert("Not enough items in the cart");}
+            }
+            else{
+            totalItems-=3;
+            alert(`Total items in the cart is ${totalItems}`);
+            }
+        }
+
+        //function for the button "Remove from Cart"
+        function removeFromCart(){
+            if(totalItems<=0){
+            {alert("Not enough items in the cart");}
+            }
+            else{
+            totalItems-=1;
+            alert(`Total items in the cart is ${totalItems}`);
+            }
+        }
+        
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<!--
+6.f. Create a rock/paper/scissor game. 
+(hint: Use math.random() for generating the random values from computer) 
+
+- You need to create (1) button that will ask from the user: rock/paper/scissor. 
+- If the button's value matches with the computer's value you need to print: You win!, else: You lose! 
+-->
+<h3 background="red">Rock Paper Scissors Game</h3>
+<p>
+    Steps to play the game: <br>
+    1. Enter any number between 0 and 1 by clicking the below button. <br>
+    2. Your number will be compared with system generated random number. <br>
+    3. If both numbers match, you 'WIN' else you 'LOSE' <br>
+</p>
+<input type="button" onclick="rockPaperScissor()" value="Play your game">
+    <script>
+        function rockPaperScissor(){
+            let mathRandom=Math.random();
+            console.log(mathRandom);
+            let rnumber=mathRandom.toFixed(1);
+            console.log("System generated random number is ", rnumber);
+            let userNumber=prompt("Enter the number: \n Rock(0 to 0.39), Paper(0.4 to 0.79), Scissors(0.8 to 1)");
+            if(userNumber==rnumber)
+            {
+                console.log("You win!");
+                alert("You WIN!")
+            }
+            else
+            {
+                console.log("You LOSE!");
+                alert("You LOSE!");
+            }
+    
+}
+    </script>
+</body>
+</html>
