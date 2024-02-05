@@ -73,7 +73,7 @@ function convertFahrenheitToCelcius(degree)
     return fahre;
 }
 
-var degree=prompt("Enter degree");
+var degree=prompt("Enter degree 'f' or 'c'");
 var unit=prompt("Enter unit to convert as");
 if(unit.length==1)
 {
