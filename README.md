@@ -20,7 +20,7 @@ This repo is made for noting down my journey of learning .js
 - Challenge 6 [Uploaded]  ✅
 - Challenge 7 [Uploaded]  ✅
 - Challenge 8 [Uploaded]  ✅
-- Challenge 9 [Uploaded] 
+- Challenge 9 [Uploaded]  ✅
 - Challenge 10 [Uploaded] 
 - Challenge 11 [Uploaded] 
 - Challenge 12 [Uploaded] 
