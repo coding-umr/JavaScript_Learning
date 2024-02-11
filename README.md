@@ -1,32 +1,84 @@
-# JavaScript_Learning
-## (⚠️DO NOT PUSH ANYTHING INTO MAIN BRANCH⚠️)
-This repo is made for noting down my journey of learning .js
-## What to do after getting this repo to you? 
-> You need to create a feature branch of your name, and push the solutions of the challenges present in the main branch.
-## In this I would be posting everything what I learnt / what I practiced.
 
-## All the exercises regarding [Basic javaScript] are present in: 
-> basicJavaScript folder
+![Logo](https://www.bing.com/ck/a?!&&p=4df54fd2b909f5d7JmltdHM9MTcwNzYwOTYwMCZpZ3VpZD0wNDYxOGY3Zi1iOWQzLTY4NDMtMmM2Mi05ZGE3YjhkNTY5ODQmaW5zaWQ9NTU5MQ&ptn=3&ver=2&hsh=3&fclid=04618f7f-b9d3-6843-2c62-9da7b8d56984&u=a1L2ltYWdlcy9zZWFyY2g_cT1qYXZhc2NyaXB0IGxvZ28mRk9STT1JUUZSQkEmaWQ9ODVFODU1RkJFMjg4NTc1QkY3RDlGMjgzRTkyRTM2QzRGN0E4MDE2Ng&ntb=1)
 
-## All the challenger exercises are present in folder: 
-> challengers
 
-### Complete all the challenges and post your solutions by creating a new branch of your own! 
-- Challenge 1 [Uploaded]  ✅
-- Challenge 2 [Uploaded]  ✅
-- Challenge 3 [Uploaded]  ✅
-- Challenge 4 [Uploaded]  ✅
-- Challenge 5 [Uploaded]  ✅
-- Challenge 6 [Uploaded]  ✅
-- Challenge 7 [Uploaded]  ✅
-- Challenge 8 [Uploaded]  ✅
-- Challenge 9 [Uploaded]  ✅
-- Challenge 10 [Uploaded] 
-- Challenge 11 [Uploaded] 
-- Challenge 12 [Uploaded] 
-- Challenge 13 [Uploaded] 
-- Challenge 14 [Uploaded] 
-- Challenge 15 [Uploaded] 
-- Challenge 16 [Uploaded] 
- 
-  
+# JavaScript Automation 
+
+In this we're gonna make ourself JavaScript Autmation Engineers.
+
+
+
+## Authors
+
+- [Vishal](https://www.github.com/octokatherine)
+- [Sukanya](https://github.com/Sukankrishnan)
+
+
+## 🚀 About Us
+We are a group of people across world who are learning to become an Automation Engineer (SDETs)
+Initially, our target is on excelling JavaScript Automation. 
+Touching down the Web+API+Mobile Testing Unit now..
+
+We're so much happy and openly welcome you to learn with us, contribute in our challenges, and become one SDET with us.
+
+
+## Tech Stack
+(In each step, we would be targetting these things) 
+
+**Programming Language:** javaScript
+
+**API Automation Stack:** Cypress, Spec-Flow, Postman
+
+**Web Automation Stack:** Cypress/Playwright, Spec-Flow
+
+**Ci/Cd - Devops Tools:** Jenkins, Docker, Kubernetes
+
+
+## Roadmap
+
+[API Automation]
+- Basic JavaScript (Check out basic .js folder for brief) 
+- Postman Basics 
+- Cypress for API Automation
+- Intgration with Jenkins
+- Learning BDD (Gherkin) 
+- Creating BDD API Automation Framework.
+- Postman Advanced (Covering Newman CLI) + Jest / Chai library.
+
+[Web Auatomation]
+- Working / Understanding with Locators. 
+- Cypress / Playwright
+- Advanced javaScript (asynchrounous .js)  
+
+[Devops Tools]
+- Linux Basics 
+- Docker for testers
+- Kubernetes for testers
+
+(Unit now, this is our plan..............)
+
+
+## What you need to start contributing/completing your challenges? 
+
+Pre-Requistives things in your system
+- VS-CODE
+- Git bash
+- GitHub account 
+- node.js 
+- Fork this repository into your local system.
+
+## How to push your code into a branch
+(Only for challenger exercises) - If your code looks good it could be merged in our main page.
+
+Else, for working with us, you can request us to create a feature branch of your name, and you can push your commands there itself.
+
+[Commands to write in terminal for pushing]
+
+```bash
+  git status
+  git add .
+  git commit -m "enter appropriate message"
+  git push -set-upstream 
+  git status
+```
+    
