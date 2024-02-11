@@ -1,0 +1,71 @@
+<html>
+
+<body>
+    <button onclick="addBy4()">+4</button>
+    <button onclick="addBy5()">+5</button>
+    <button onclick="removeFromCart()">Remove From Cart</button>
+    <button onclick="decereaseBy2()">-2</button>
+    <button onclick="decereaseBy3()">-3</button>
+    <div>
+        Calculator!
+        <button>1</button>
+        <button onclick="addTwoNumbers()">+</button>
+        <button>2</button>
+    </div>
+    <script>
+        let sum = 0;
+
+        function addTwoNumbers() {
+            sum = 1 + 2;
+            console.log("Sum:" + sum);
+        }
+
+
+        const name = "Uma";
+        console.log(`My name is: ${name}`);
+        const coffeePrice = 5, bagalsPrice = 3, soupCost = 9;
+        const cost = coffeePrice + (bagalsPrice * 2) + soupCost;
+        console.log(`Cost of food: $${cost}`);
+        const tax = cost * 0.1;
+        console.log(`Tax (10%): $${tax}`);
+        const totalCost = cost + tax;
+        console.log(`Total cost: $${totalCost}`);
+
+        let inCart = 0;
+
+        function addBy4() {
+            inCart += 4;
+            console.log("Total items in cart " + inCart);
+        }
+        function addBy5() {
+            inCart += 5;
+            console.log("Total items in cart " + inCart);
+        }
+        function removeFromCart() {
+            if (inCart > 0) {
+                inCart += -1;
+                console.log("Total items in cart " + inCart);
+            } else {
+                console.log("Cart is empty");
+            }
+        }
+        function decereaseBy2() {
+            if (inCart > 1) {
+                inCart += -2;
+                console.log("Total items in cart " + inCart);
+            } else {
+                console.log("Cart is empty");
+            }
+        }
+        function decereaseBy3() {
+            if (inCart > 2) {
+                inCart += -3;
+                console.log("Total items in cart " + inCart);
+            } else {
+                console.log("Cart is empty");
+            }
+        } 
+    </script>
+</body>
+
+</html>
