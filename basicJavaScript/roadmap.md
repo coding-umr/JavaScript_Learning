@@ -1,5 +1,5 @@
 # Things covered in this Folder of basic JavaScript 
-- javaScript badics 
+- javaScript basics 
 - Numbers and Maths in .js
 - Strings 
 - HTML, CSS, console.log
