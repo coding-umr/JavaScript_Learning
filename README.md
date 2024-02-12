@@ -84,5 +84,5 @@ Else, for working with us, you can request us to create a feature branch of your
 
 ## Used By
 
-This project is used by the following people across the world for learning purposes
+This project is used by the many people across the world for learning purposes
     
