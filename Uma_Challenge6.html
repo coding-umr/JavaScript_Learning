@@ -1,0 +1,36 @@
+<html>
+
+<body>
+    <button onclick=takeInput()>Play RPS Game</button>
+</body>
+<script>
+
+    const list = ["rock", "paper", "scissor"];
+    const randomString = generateRandomStringFromList(list);
+
+    function generateRandomStringFromList(list) {
+        const randomIndex = Math.floor(Math.random() * list.length);
+        return list[randomIndex];
+    }
+
+    function takeInput() {
+        const userInput = prompt("Enter your choice rock/paper/scissor");
+        return userInput;
+    }
+
+    const userChoice = takeInput();
+
+    console.log(randomString + ' ' + userChoice);
+
+    function result(randomString, userChoice) {
+        return result = userChoice === randomString ? 'You win!' : 'You loose!';
+    }
+
+    alert(result());
+
+
+
+
+</script>
+
+</html>
