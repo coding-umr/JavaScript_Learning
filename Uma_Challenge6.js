@@ -66,6 +66,8 @@ console.log(tossResult);
 - And in case of -2,-3 before updating the quantity in cart, check if it is equals to 0 or not.
 (1) if it's equal to 0, display "Not enough items in the cart" else just update the cart. 
 
+//updated in challenge 5 code
+
 6.f. Create a rock/paper/scissor game. 
 (hint: Use math.random() for generating the random values from computer) 
 
